@@ -1,5 +1,14 @@
 # 🎮 KarahaN Games - 5-6 Yaş Grubu Eğitici Oyun Platformu
 
+[![GitHub](https://img.shields.io/badge/GitHub-mrkarahann-blue)](https://github.com/mrkarahann)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Google AI](https://img.shields.io/badge/Google_AI-4285F4?style=flat&logo=google&logoColor=white)](https://ai.google.dev/)
+
+🌐 **Canlı Demo**: [GitHub Pages'de yayınlandığında link buraya eklenecek]
+
 ## 📋 Proje Hakkında
 
 Bu proje, 5-6 yaş grubu okuma yazma bilmeyen çocuklar için tasarlanmış, görsel ve sesli öğelerle zenginleştirilmiş eğitici bir oyun platformudur. Google AI Studio (Gemini API) entegrasyonu ile hikaye oluşturma ve interaktif öğrenme deneyimi sunar.
