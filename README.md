@@ -7,7 +7,9 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Google AI](https://img.shields.io/badge/Google_AI-4285F4?style=flat&logo=google&logoColor=white)](https://ai.google.dev/)
 
-🌐 **Canlı Demo**: [GitHub Pages'de yayınlandığında link buraya eklenecek]
+🌐 **Canlı Demo**: https://mrkarahann.github.io/basic_game/
+
+> ⚠️ **Not**: GitHub Pages'i etkinleştirmek için repository Settings > Pages bölümünden `main` branch'ini seçin.
 
 ## 📋 Proje Hakkında
 
