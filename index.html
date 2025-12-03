@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KarahaN Games - 5-6 Yaş Eğitici Oyunlar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Ana Menü -->
+        <div id="main-menu" class="screen active">
+            <div class="header">
+                <h1 class="title">🎮 KarahaN Games 🎨</h1>
+                <p class="subtitle">Eğlenceli ve Öğretici Oyunlar</p>
+            </div>
+            
+            <div class="character-display" id="selected-character-display" onclick="showScreen('character-selection'); speakText('Karakter seçmek için tıkla');" style="cursor: pointer;">
+                <div class="character-placeholder">
+                    <span class="character-emoji">👤</span>
+                    <p>Karakter Seç</p>
+                </div>
+            </div>
+            
+            <div class="score-display" id="score-display" style="display: none;">
+                <div class="score-item">
+                    <span class="score-label">⭐ Skor:</span>
+                    <span class="score-value" id="score-value">0</span>
+                </div>
+                <div class="achievements-badge" id="achievements-badge" style="display: none;">
+                    <span>🏆</span>
+                </div>
+            </div>
+
+            <div class="menu-buttons">
+                <button class="menu-btn large" onclick="showScreen('coloring'); speakText('Boyama yapmak için tıkla');">
+                    <span class="btn-icon">🎨</span>
+                    <span class="btn-text">Boyama</span>
+                </button>
+                
+                <button class="menu-btn large" onclick="showScreen('story'); speakText('Hikaye dinlemek için tıkla');">
+                    <span class="btn-icon">📚</span>
+                    <span class="btn-text">Hikaye</span>
+                </button>
+                
+                <button class="menu-btn large" onclick="showScreen('puzzle'); speakText('Bulmaca çözmek için tıkla');">
+                    <span class="btn-icon">🧩</span>
+                    <span class="btn-text">Bulmaca</span>
+                </button>
+                
+                <button class="menu-btn large" onclick="showScreen('video-creator'); speakText('Video oluşturmak için tıkla');">
+                    <span class="btn-icon">🎬</span>
+                    <span class="btn-text">Video Oluştur</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Karakter Seçimi Ekranı -->
+        <div id="character-selection" class="screen">
+            <div class="screen-header">
+                <button class="back-btn" onclick="showScreen('main-menu')">← Geri</button>
+                <h2>Karakterini Seç! 👤</h2>
+            </div>
+            <div class="character-grid">
+                <div class="character-card" onclick="selectCharacter('🐱', 'Kedi')">
+                    <div class="character-emoji-large">🐱</div>
+                    <p>Kedi</p>
+                </div>
+                <div class="character-card" onclick="selectCharacter('🐶', 'Köpek')">
+                    <div class="character-emoji-large">🐶</div>
+                    <p>Köpek</p>
+                </div>
+                <div class="character-card" onclick="selectCharacter('🐰', 'Tavşan')">
+                    <div class="character-emoji-large">🐰</div>
+                    <p>Tavşan</p>
+                </div>
+                <div class="character-card" onclick="selectCharacter('🐻', 'Ayı')">
+                    <div class="character-emoji-large">🐻</div>
+                    <p>Ayı</p>
+                </div>
+                <div class="character-card" onclick="selectCharacter('🦁', 'Aslan')">
+                    <div class="character-emoji-large">🦁</div>
+                    <p>Aslan</p>
+                </div>
+                <div class="character-card" onclick="selectCharacter('🐸', 'Kurbağa')">
+                    <div class="character-emoji-large">🐸</div>
+                    <p>Kurbağa</p>
+                </div>
+                <div class="character-card" onclick="selectCharacter('🦄', 'Tekboynuz')">
+                    <div class="character-emoji-large">🦄</div>
+                    <p>Tekboynuz</p>
+                </div>
+                <div class="character-card" onclick="selectCharacter('🐧', 'Penguen')">
+                    <div class="character-emoji-large">🐧</div>
+                    <p>Penguen</p>
+                </div>
+                <div class="character-card" onclick="selectCharacter('🦉', 'Baykuş')">
+                    <div class="character-emoji-large">🦉</div>
+                    <p>Baykuş</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Boyama Ekranı -->
+        <div id="coloring" class="screen">
+            <div class="screen-header">
+                <button class="back-btn" onclick="showScreen('main-menu')">← Geri</button>
+                <h2>Boyama Yap! 🎨</h2>
+            </div>
+            <div class="coloring-container">
+                <div class="color-palette">
+                    <div class="color-btn" style="background: #FF0000;" onclick="selectColor('#FF0000')"></div>
+                    <div class="color-btn" style="background: #FFA500;" onclick="selectColor('#FFA500')"></div>
+                    <div class="color-btn" style="background: #FFFF00;" onclick="selectColor('#FFFF00')"></div>
+                    <div class="color-btn" style="background: #00FF00;" onclick="selectColor('#00FF00')"></div>
+                    <div class="color-btn" style="background: #0000FF;" onclick="selectColor('#0000FF')"></div>
+                    <div class="color-btn" style="background: #800080;" onclick="selectColor('#800080')"></div>
+                    <div class="color-btn" style="background: #FFC0CB;" onclick="selectColor('#FFC0CB')"></div>
+                    <div class="color-btn" style="background: #000000;" onclick="selectColor('#000000')"></div>
+                    <div class="color-btn" style="background: #FFFFFF; border: 2px solid #ccc;" onclick="selectColor('#FFFFFF')"></div>
+                </div>
+                <div class="canvas-container">
+                    <canvas id="coloring-canvas" width="400" height="400"></canvas>
+                </div>
+                <div class="coloring-controls">
+                    <button class="action-btn" onclick="clearCanvas()">🗑️ Temizle</button>
+                    <button class="action-btn" onclick="loadColoringTemplate()">🖼️ Yeni Resim</button>
+                    <button class="action-btn" onclick="completeColoring()" style="background: linear-gradient(135deg, #00c851 0%, #007e33 100%);">✅ Tamamlandı</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hikaye Ekranı -->
+        <div id="story" class="screen">
+            <div class="screen-header">
+                <button class="back-btn" onclick="showScreen('main-menu')">← Geri</button>
+                <h2>Hikaye Dinle! 📚</h2>
+            </div>
+            <div class="story-container">
+                <div class="story-image" id="story-image">
+                    <span class="story-emoji">📖</span>
+                </div>
+                <div class="story-text" id="story-text">
+                    <p>Bir hikaye oluşturmak için butona tıkla!</p>
+                </div>
+                <div class="story-controls">
+                    <button class="action-btn large" onclick="generateStory()">✨ Yeni Hikaye Oluştur</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bulmaca/Şifreleme Ekranı -->
+        <div id="puzzle" class="screen">
+            <div class="screen-header">
+                <button class="back-btn" onclick="showScreen('main-menu')">← Geri</button>
+                <h2>Bulmaca Çöz! 🧩</h2>
+            </div>
+            <div class="puzzle-container">
+                <div class="puzzle-type-selector">
+                    <button class="puzzle-type-btn active" onclick="loadPuzzleType('pattern')">🔢 Desen</button>
+                    <button class="puzzle-type-btn" onclick="loadPuzzleType('memory')">🧠 Hafıza</button>
+                    <button class="puzzle-type-btn" onclick="loadPuzzleType('find')">🔍 Bul</button>
+                </div>
+                <div id="puzzle-content" class="puzzle-content">
+                    <!-- Puzzle içeriği buraya yüklenecek -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Oluşturucu Ekranı -->
+        <div id="video-creator" class="screen">
+            <div class="screen-header">
+                <button class="back-btn" onclick="showScreen('main-menu')">← Geri</button>
+                <h2>Video Oluştur! 🎬</h2>
+            </div>
+            <div class="video-creator-container">
+                <div class="video-preview" id="video-preview">
+                    <p>Video önizlemesi burada görünecek</p>
+                </div>
+                <div class="video-controls">
+                    <button class="action-btn large" onclick="createVideo()">🎥 Video Oluştur</button>
+                    <button class="action-btn" onclick="downloadVideo()" id="download-btn" style="display:none;">💾 İndir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@google/generative-ai@0.2.1/dist/index.js"></script>
+    <script>
+        // GoogleGenerativeAI global olarak kullanılabilir hale getir
+        window.GoogleGenerativeAI = GoogleGenerativeAI;
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
+

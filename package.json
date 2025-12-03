@@ -1,0 +1,17 @@
+{
+  "name": "karahan-games",
+  "version": "1.0.0",
+  "description": "5-6 Yaş Grubu Eğitici Oyun Platformu",
+  "scripts": {
+    "test": "cypress run",
+    "test:open": "cypress open",
+    "test:headed": "cypress run --headed",
+    "test:video": "cypress run --record",
+    "server": "node test-server.js",
+    "test:all": "node test-server.js & sleep 2 && cypress run && pkill -f test-server.js"
+  },
+  "devDependencies": {
+    "cypress": "^13.6.0"
+  }
+}
+

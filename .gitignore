@@ -1,0 +1,35 @@
+# API Keys
+.env
+*.env
+config.js
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependencies
+node_modules/
+
+# Build
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+.cypress/
